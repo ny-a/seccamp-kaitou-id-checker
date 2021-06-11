@@ -1,26 +1,22 @@
 import React, { useState } from 'react';
 
-import { useAppDispatch, useAppSelector } from '../../app/hooks';
-import {
-  setId,
-  selectId,
-} from './checkerSlice';
+import { useAppDispatch } from '../../app/hooks';
+import { setId } from './checkerSlice';
 import styles from './Checker.module.css';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 
 export function CheckerInput() {
-  const id = useAppSelector(selectId);
   const dispatch = useAppDispatch();
-  const [newId, setNewId] = useState('2');
+  const [newId, setNewId] = useState('');
 
   const newIdValue = String(newId) || '';
 
   return (
     <div>
       <div className={styles.row}>
-        <span>SecCamp 回答ID Checker</span>
+        <span>SecCamp/SecNextCamp '21 回答ID Checker</span>
       </div>
       <div className={styles.row}>
         <form noValidate autoComplete="off" onSubmit={() => dispatch(setId(newIdValue))}>

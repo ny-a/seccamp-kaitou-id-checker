@@ -33,20 +33,25 @@ export function CheckerResult() {
   const id = useAppSelector(selectId);
   const dispatch = useAppDispatch();
 
-  let result = '通過していないようです……';
+  let result = (<p>通過していないようです……</p>);
   if (nextCamp.find(i => i.toString() === id) !== undefined) {
-    result = 'ネクストキャンプに通過しているようです。';
+    result = (<div><p>
+      ネクストキャンプに通過しているようです。
+      </p>
+      <a href="https://www.ipa.go.jp/files/000091508.pdf">公式 PDF</a> で確認する
+      </div>);
   }
 
   if (secCamp.find(i => i.toString() === id) !== undefined) {
-    result = '全国大会に通過しているようです。';
+    result = (<div>
+      <p>全国大会に通過しているようです。</p>
+      <a href="https://www.ipa.go.jp/files/000091507.pdf">公式 PDF</a> で確認する
+      </div>);
   }
 
   return (
     <div>
-      <p>
-        {result}
-      </p>
+      {result}
       <Button variant="contained" onClick={() => dispatch(setId(''))}>戻る</Button>
     </div>
   );

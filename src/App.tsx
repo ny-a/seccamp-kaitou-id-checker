@@ -12,7 +12,7 @@ function App() {
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6">
-            SecCamp 回答ID Checker
+            SecCamp/SecNextCamp '21 回答ID Checker
           </Typography>
         </Toolbar>
       </AppBar>
