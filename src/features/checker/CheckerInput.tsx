@@ -16,7 +16,7 @@ export function CheckerInput() {
   return (
     <div>
       <div className={styles.row}>
-        <span>SecCamp/SecNextCamp '21 回答ID Checker</span>
+        <span>SecCamp/SecNextCamp '21 非公式 回答ID Checker</span>
       </div>
       <div className={styles.row}>
         <form noValidate autoComplete="off" onSubmit={() => dispatch(setId(newIdValue))}>
