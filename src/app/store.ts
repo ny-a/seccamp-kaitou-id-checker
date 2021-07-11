@@ -1,9 +1,9 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import cherkerReducer from '../features/checker/checkerSlice';
+import checkerReducer from '../features/checker/checkerSlice';
 
 export const store = configureStore({
   reducer: {
-    checker: cherkerReducer,
+    checker: checkerReducer,
   },
 });
 
