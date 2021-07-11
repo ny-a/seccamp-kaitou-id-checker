@@ -9,17 +9,16 @@ export function CheckerResult() {
   const id = useAppSelector(selectId);
   const dispatch = useAppDispatch();
 
-  let result = (<p>通過していないようです……</p>);
+  const matchingIdList = idLists.find(idList => idList.isInIdRange(id));
 
-  for (const idList of idLists) {
-    if (idList.ids.find(i => i.toString() === id) !== undefined) {
-      result = (<div>
-        <p>{idList.name}に通過しているようです。</p>
-        <a href={idList.url}>公式 PDF</a> で確認する
-      </div>);
-    }
-  }
-
+  const result = matchingIdList ? (
+    <div>
+      {matchingIdList.name}に通過しているか
+      <a href={matchingIdList.url}>公式 PDF</a> で確認する
+    </div>
+  ) : (
+    <p>回答IDを確認してください。</p>
+  );
 
   return (
     <div>
