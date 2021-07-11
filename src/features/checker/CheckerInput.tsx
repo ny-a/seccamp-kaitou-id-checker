@@ -37,9 +37,6 @@ export function CheckerInput() {
       </div>
       <div>
         <aside className={styles.aside}>
-          回答IDは外部に送信していません。<br />
-          (不安であれば Incognito モードで開いて、オフラインにした後で確認してください。)<br />
-          <br />
           {sourceList}
         </aside>
       </div>
