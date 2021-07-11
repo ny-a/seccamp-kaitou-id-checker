@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/seccamp-kaitou-id-checker/static/css/main.ceb4977e.chunk.css",
+    "main.js": "/seccamp-kaitou-id-checker/static/js/main.0270b706.chunk.js",
+    "main.js.map": "/seccamp-kaitou-id-checker/static/js/main.0270b706.chunk.js.map",
+    "runtime-main.js": "/seccamp-kaitou-id-checker/static/js/runtime-main.f4d9d274.js",
+    "runtime-main.js.map": "/seccamp-kaitou-id-checker/static/js/runtime-main.f4d9d274.js.map",
+    "static/js/2.66c4ebe0.chunk.js": "/seccamp-kaitou-id-checker/static/js/2.66c4ebe0.chunk.js",
+    "static/js/2.66c4ebe0.chunk.js.map": "/seccamp-kaitou-id-checker/static/js/2.66c4ebe0.chunk.js.map",
+    "index.html": "/seccamp-kaitou-id-checker/index.html",
+    "static/css/main.ceb4977e.chunk.css.map": "/seccamp-kaitou-id-checker/static/css/main.ceb4977e.chunk.css.map",
+    "static/js/2.66c4ebe0.chunk.js.LICENSE.txt": "/seccamp-kaitou-id-checker/static/js/2.66c4ebe0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f4d9d274.js",
+    "static/js/2.66c4ebe0.chunk.js",
+    "static/css/main.ceb4977e.chunk.css",
+    "static/js/main.0270b706.chunk.js"
+  ]
+}
